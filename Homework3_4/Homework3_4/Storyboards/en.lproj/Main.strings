@@ -1,0 +1,18 @@
+
+/* Class = "UITextField"; placeholder = "Enter username"; ObjectID = "8ym-Fm-Yhh"; */
+"8ym-Fm-Yhh.placeholder" = "Enter username";
+
+/* Class = "UIButton"; normalTitle = "Give me some details"; ObjectID = "ZCM-iH-zNG"; */
+"ZCM-iH-zNG.normalTitle" = "Give me some details";
+
+/* Class = "UILabel"; text = "Lorem ipsum text since Jan 2015"; ObjectID = "ce0-0M-lkn"; */
+"ce0-0M-lkn.text" = "Lorem ipsum text since Jan 2015";
+
+/* Class = "UILabel"; text = "Beyound Limits"; ObjectID = "err-RR-sZd"; */
+"err-RR-sZd.text" = "Beyound Limits";
+
+/* Class = "UILabel"; text = "Player Enthusiast"; ObjectID = "f80-EI-1c8"; */
+"f80-EI-1c8.text" = "Player Enthusiast";
+
+/* Class = "UILabel"; text = "Thomas"; ObjectID = "fyj-Bc-Y3i"; */
+"fyj-Bc-Y3i.text" = "Thomas";

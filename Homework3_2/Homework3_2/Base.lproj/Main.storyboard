@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Homework3_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EHt-ls-v0c">
+                                <rect key="frame" x="0.0" y="44" width="207" height="409"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4cw-vf-rcb">
+                                <rect key="frame" x="207" y="44" width="207" height="409"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ze9-Db-PKr">
+                                <rect key="frame" x="0.0" y="453" width="207" height="409"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hf6-8c-G6l">
+                                <rect key="frame" x="207" y="453" width="207" height="409"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Hf6-8c-G6l" firstAttribute="width" secondItem="Ze9-Db-PKr" secondAttribute="width" id="7kV-Ip-Q1c"/>
+                            <constraint firstItem="4cw-vf-rcb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FIY-Vr-W0P"/>
+                            <constraint firstItem="EHt-ls-v0c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JFR-9T-kIR"/>
+                            <constraint firstItem="Hf6-8c-G6l" firstAttribute="height" secondItem="4cw-vf-rcb" secondAttribute="height" id="M39-eX-V3j"/>
+                            <constraint firstItem="Ze9-Db-PKr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NIh-F8-eo6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ze9-Db-PKr" secondAttribute="bottom" id="PfM-Xe-kNF"/>
+                            <constraint firstItem="Hf6-8c-G6l" firstAttribute="leading" secondItem="Ze9-Db-PKr" secondAttribute="trailing" id="c7I-i1-0NB"/>
+                            <constraint firstItem="Ze9-Db-PKr" firstAttribute="top" secondItem="EHt-ls-v0c" secondAttribute="bottom" id="ft0-iV-0bk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hf6-8c-G6l" secondAttribute="bottom" id="hFG-0S-7wK"/>
+                            <constraint firstItem="4cw-vf-rcb" firstAttribute="leading" secondItem="EHt-ls-v0c" secondAttribute="trailing" id="jpD-67-VFA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4cw-vf-rcb" secondAttribute="trailing" id="mKg-Jn-rVU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hf6-8c-G6l" secondAttribute="trailing" id="oMf-Le-0Rk"/>
+                            <constraint firstItem="Hf6-8c-G6l" firstAttribute="top" secondItem="4cw-vf-rcb" secondAttribute="bottom" id="s6f-ri-cK2"/>
+                            <constraint firstItem="4cw-vf-rcb" firstAttribute="width" secondItem="EHt-ls-v0c" secondAttribute="width" id="sqK-rX-qOs"/>
+                            <constraint firstItem="EHt-ls-v0c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tli-gT-MPl"/>
+                            <constraint firstItem="Ze9-Db-PKr" firstAttribute="height" secondItem="EHt-ls-v0c" secondAttribute="height" id="vu7-H3-SPA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstView" destination="EHt-ls-v0c" id="PVo-Mh-FDI"/>
+                        <outlet property="fourthView" destination="Hf6-8c-G6l" id="jgn-7x-oUe"/>
+                        <outlet property="secondView" destination="4cw-vf-rcb" id="ues-Jl-gH1"/>
+                        <outlet property="thirdView" destination="Ze9-Db-PKr" id="q3e-An-uKK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

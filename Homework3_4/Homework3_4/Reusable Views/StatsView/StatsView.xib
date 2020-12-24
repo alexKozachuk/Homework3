@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StatsView" customModule="Homework3_4" customModuleProvider="target">
+            <connections>
+                <outlet property="firstImageView" destination="L0s-1k-Oh7" id="nNV-qB-2cG"/>
+                <outlet property="firstNameLabel" destination="NIX-VR-EWX" id="gtd-cZ-196"/>
+                <outlet property="firstValueLabel" destination="1uh-Lf-aFR" id="OrI-9i-WnU"/>
+                <outlet property="secondImageView" destination="RhE-l5-D5p" id="NFF-BF-JOE"/>
+                <outlet property="secondNameLabel" destination="j1C-Cg-aKb" id="mva-fH-RlJ"/>
+                <outlet property="secondValueLabel" destination="mfX-nv-xAd" id="hSo-QC-aeC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cgr-SQ-cQy">
+            <rect key="frame" x="0.0" y="0.0" width="303" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xna-Qk-IxO">
+                    <rect key="frame" x="20" y="77" width="263" height="39"/>
+                    <color key="backgroundColor" red="0.72549019609999998" green="0.1333333333" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <state key="normal" title="Check Stats">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="Check Stats"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="buttonTap:" destination="-1" eventType="touchUpInside" id="adb-V9-7cO"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4Sc-g2-RIx">
+                    <rect key="frame" x="20" y="10" width="263" height="57"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video-icon" translatesAutoresizingMaskIntoConstraints="NO" id="L0s-1k-Oh7">
+                            <rect key="frame" x="0.0" y="5.5" width="48" height="46"/>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="mPF-0k-Hh2">
+                            <rect key="frame" x="58" y="6" width="52.5" height="45"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Videos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIX-VR-EWX">
+                                    <rect key="frame" x="0.0" y="0.0" width="52.5" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="115" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uh-Lf-aFR">
+                                    <rect key="frame" x="0.0" y="24.5" width="52.5" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" image="video-icon" translatesAutoresizingMaskIntoConstraints="NO" id="RhE-l5-D5p">
+                            <rect key="frame" x="152.5" y="5.5" width="48" height="46"/>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="3dw-7S-u2V">
+                            <rect key="frame" x="210.5" y="6" width="52.5" height="45"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Videos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1C-Cg-aKb">
+                                    <rect key="frame" x="0.0" y="0.0" width="52.5" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="115" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfX-nv-xAd">
+                                    <rect key="frame" x="0.0" y="24.5" width="52.5" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="L0s-1k-Oh7" firstAttribute="leading" secondItem="4Sc-g2-RIx" secondAttribute="leading" id="Fir-Vc-1m7"/>
+                        <constraint firstItem="mPF-0k-Hh2" firstAttribute="leading" secondItem="L0s-1k-Oh7" secondAttribute="trailing" constant="10" id="GtZ-Lr-dsf"/>
+                        <constraint firstItem="3dw-7S-u2V" firstAttribute="leading" secondItem="RhE-l5-D5p" secondAttribute="trailing" constant="10" id="hYe-8g-6z9"/>
+                        <constraint firstAttribute="trailing" secondItem="3dw-7S-u2V" secondAttribute="trailing" id="vcI-jH-3Nf"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4Sc-g2-RIx" secondAttribute="trailing" constant="20" id="KrV-2p-U9C"/>
+                <constraint firstItem="4Sc-g2-RIx" firstAttribute="top" secondItem="cgr-SQ-cQy" secondAttribute="top" constant="10" id="Lhh-qs-lQE"/>
+                <constraint firstItem="Xna-Qk-IxO" firstAttribute="leading" secondItem="cgr-SQ-cQy" secondAttribute="leading" constant="20" id="PlJ-Kc-hfV"/>
+                <constraint firstItem="4Sc-g2-RIx" firstAttribute="leading" secondItem="cgr-SQ-cQy" secondAttribute="leading" constant="20" id="TNj-B9-QRG"/>
+                <constraint firstAttribute="trailing" secondItem="Xna-Qk-IxO" secondAttribute="trailing" constant="20" id="bOw-aH-RaT"/>
+                <constraint firstAttribute="bottom" secondItem="Xna-Qk-IxO" secondAttribute="bottom" constant="10" id="feq-wS-0qo"/>
+                <constraint firstItem="Xna-Qk-IxO" firstAttribute="top" secondItem="4Sc-g2-RIx" secondAttribute="bottom" constant="10" id="hNE-gm-UT9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="258.69565217391306" y="-210.26785714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="video-icon" width="48" height="46"/>
+    </resources>
+</document>
